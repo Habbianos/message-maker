@@ -1,0 +1,202 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+/*	opacity: 0.97;*/
+	image-rendering: pixelated;
+    image-rendering: crisp-edges;
+	transition:
+		background-color .3s,
+		border .3s,
+		color .3s;
+}
+body {
+	font-family: Ubuntu;
+	text-align: center;
+	background-color: #eee;
+	
+	background-image:
+		linear-gradient(45deg, #bbb 7px, transparent 7px, transparent 21px, #bbb 21px),
+		linear-gradient(45deg, #bbb 7px, transparent 7px, transparent 21px, #bbb 21px);
+	background-size: 20px 20px;
+	background-position: 0 0, 10px 10px;
+}
+
+main {
+	width: 738px;
+    padding: 5px;
+    margin: 5px auto;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+main > div {
+	padding: 5px;
+    margin-bottom: 5px;
+    background-color: #CEEBF7;
+    border-radius: 5px;
+    overflow: hidden;
+}
+main > div:last-child {
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+	color: #444;
+	font-weight: 100;
+}
+
+div > div[id] {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+height: 370px;
+	overflow: hidden;
+}
+div > div[id] fieldset {
+	line-height: 1.5em;
+	display: inline-block;
+	border: 1px solid grey;
+	border-radius: 3px;
+	padding: 5px;
+}
+div > div[id] fieldset legend {
+	text-align: left;
+}
+div > div[id] span {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+}
+div#settings {
+	float: left;
+	width: 316px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+input {
+	width: 16px;
+	height: 16px;
+}
+#estilos span:nth-of-type(1) {
+	background-image: url(https://vignette4.wikia.nocookie.net/habbo/images/b/bd/F-3200~135.png/revision/latest?cb=20131129115614&path-prefix=en);
+	background-size: 21px 22px;
+}
+#estilos span:nth-of-type(2) {
+	background-image: url(https://vignette2.wikia.nocookie.net/habbo/images/c/c2/F-3167~67.png/revision/latest?cb=20131129113242&path-prefix=en);
+	background-size: 25px 29px;
+}
+#estilos span:nth-of-type(3) {
+	background-image: url(https://vignette3.wikia.nocookie.net/habbo/images/0/0d/F-3113~33.png/revision/latest?cb=20131129111138&path-prefix=en);
+	background-size: 25px 29px;
+}
+#estilos input[type="button"] {
+	border: 0;
+	background-size: 16px;
+	background-color: transparent;
+	opacity: .7;
+}
+#estilos input {
+	transform: translateY(-8px);
+}
+#estilos input[type="button"]:hover {
+	opacity: .85;
+}
+#estilos input[type="button"]:active {
+	opacity: 1;
+}
+#estilos input:nth-of-type(3n) {
+	background-image: url(https://habboemotion.com/resources/generalscripts/generatorv2/img/f_der.gif);
+}
+#estilos input:nth-of-type(3n+2) {
+	background-image: url(https://habboemotion.com/resources/generalscripts/generatorv2/img/f_izq.gif);
+}
+#luz input, #fundo input, #especiais input {
+	-webkit-appearance: none;
+	cursor: pointer;
+	background-origin: content-box;
+	background-size: 12px;
+	background-repeat: no-repeat;
+	padding: 1px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+#luz input:hover, #fundo input:hover {
+	border-color: #39b;
+}
+#luz input:checked, #fundo input:checked, #especiais input:checked {
+	border: 2px solid #39b !important;
+	padding: 0 !important;
+}
+#luz input:nth-of-type(1), #fundo input:nth-of-type(1) {
+	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJcFBoWS1fMGxOOVE=w1366-h590-iv1);
+	background-size: 8px;
+	background-position: center -347px;
+}
+#luz input:nth-of-type(2) {
+	background-image: linear-gradient(#ff94df, #ff94df);
+}
+#luz input:nth-of-type(3) {
+	background-image: linear-gradient(#e7f552, #e7f552);
+}
+#luz input:nth-of-type(4) {
+	background-image: linear-gradient(#19bcfb, #19bcfb);
+}
+#fundo input:nth-of-type(2) {
+	background-image: linear-gradient(#fff, #fff);
+}
+#fundo input:nth-of-type(3) {
+	background-image: linear-gradient(#f00, #f00);
+}
+#fundo input:nth-of-type(4) {
+	background-image: linear-gradient(#0f0, #0f0);
+}
+#fundo input:nth-of-type(5) {
+	background-image: linear-gradient(#00f, #00f);
+}
+#fundo input:nth-of-type(6) {
+	background-image: linear-gradient(#000, #000);
+}
+#especiais input {
+	width: 40px;
+	height: 40px;
+	background-color: #eeeeee;
+	background-size: inherit;
+	background-position: center;
+}
+#especiais input:hover {
+	background-color: #ddd;
+	border-color: #bbb;
+}
+#especiais input:active {
+	background-color: #ccc;
+	border-color: #aaa;
+}
+#especiais input:nth-of-type(1) {
+	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJeHlWUGp5ZE9WaXM=w923-h639-iv1);
+}
+#especiais input:nth-of-type(2) {
+	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJOUY0alBoaEhDVVE=w923-h639-iv1);
+}
+#especiais input:nth-of-type(3) {
+	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJU2tPbWtMWDI2UGs=w923-h639-iv1);
+}
+#especiais input:nth-of-type(4) {
+	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJcXVodXpyV2U3TFk=w923-h639-iv1);
+}
+div#preview {
+	float: right;
+	width: 395px;
+	background-image: url(https://habboemotion.com/resources/generalscripts/generatorv2/img/piso.png);
+	background-position: center;
+}
+#preview img {
+	position: absolute;
+}
