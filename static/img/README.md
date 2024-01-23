@@ -1,3 +1,5 @@
+![bg_ltribe_jungle_2_sky.png](bg_ltribe_jungle_2_sky.png)
+![bg_ltribe_jungle_2.png](bg_ltribe_jungle_2.png)
 ![f_der.gif](f_der.gif)
 ![f_izq.gif](f_izq.gif)
 ![F-3113-36.png](F-3113-36.png)
