@@ -86,15 +86,15 @@ input {
 	height: 16px;
 }
 #estilos span:nth-of-type(1) {
-	background-image: url(https://vignette4.wikia.nocookie.net/habbo/images/b/bd/F-3200~135.png/revision/latest?cb=20131129115614&path-prefix=en);
+	background-image: url(static/img/F-3200~135.png);
 	background-size: 21px 22px;
 }
 #estilos span:nth-of-type(2) {
-	background-image: url(https://vignette2.wikia.nocookie.net/habbo/images/c/c2/F-3167~67.png/revision/latest?cb=20131129113242&path-prefix=en);
+	background-image: url(static/img/F-3167~67.png);
 	background-size: 25px 29px;
 }
 #estilos span:nth-of-type(3) {
-	background-image: url(https://vignette3.wikia.nocookie.net/habbo/images/0/0d/F-3113~33.png/revision/latest?cb=20131129111138&path-prefix=en);
+	background-image: url(static/img/F-3113~33.png);
 	background-size: 25px 29px;
 }
 #estilos input[type="button"] {
@@ -113,10 +113,10 @@ input {
 	opacity: 1;
 }
 #estilos input:nth-of-type(3n) {
-	background-image: url(https://habboemotion.com/resources/generalscripts/generatorv2/img/f_der.gif);
+	background-image: url(static/img/f_der.gif);
 }
 #estilos input:nth-of-type(3n+2) {
-	background-image: url(https://habboemotion.com/resources/generalscripts/generatorv2/img/f_izq.gif);
+	background-image: url(static/img/f_izq.gif);
 }
 #luz input, #fundo input, #especiais input {
 	-webkit-appearance: none;
@@ -136,7 +136,7 @@ input {
 	padding: 0 !important;
 }
 #luz input:nth-of-type(1), #fundo input:nth-of-type(1) {
-	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJcFBoWS1fMGxOOVE=w1366-h590-iv1);
+	background-image: url(static/img/info_icons.png);
 	background-size: 8px;
 	background-position: center -347px;
 }
@@ -180,21 +180,21 @@ input {
 	border-color: #aaa;
 }
 #especiais input:nth-of-type(1) {
-	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJeHlWUGp5ZE9WaXM=w923-h639-iv1);
+	background-image: url(static/img/totem_effects_icon_fire.png);
 }
 #especiais input:nth-of-type(2) {
-	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJOUY0alBoaEhDVVE=w923-h639-iv1);
+	background-image: url(static/img/totem_effects_icon_earth.png);
 }
 #especiais input:nth-of-type(3) {
-	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJU2tPbWtMWDI2UGs=w923-h639-iv1);
+	background-image: url(static/img/totem_effects_icon_aqua.png);
 }
 #especiais input:nth-of-type(4) {
-	background-image: url(https://lh3.google.com/u/0/d/0B1-7FySnIgnJcXVodXpyV2U3TFk=w923-h639-iv1);
+	background-image: url(static/img/totem_effects_icon_staff.png);
 }
 div#preview {
 	float: right;
 	width: 395px;
-	background-image: url(https://habboemotion.com/resources/generalscripts/generatorv2/img/piso.png);
+	background-image: url(static/img/piso.png);
 	background-position: center;
 }
 #preview img {

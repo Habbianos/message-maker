@@ -44,14 +44,14 @@ class GERADOR {
 				h_mobi: 1,
 				estado: [[ // Sol, brilho
 					{
-						url: "/static/img/F-3200-125.png",
+						url: "static/img/F-3200-125.png",
 						w: 46,
 						h: 46,
 						x: 2,
 						y: 0
 					},
 					{
-						url: "/static/img/F-3200-101.png",
+						url: "static/img/F-3200-101.png",
 						w: 108,
 						h: 103,
 						x: -31,
@@ -60,14 +60,14 @@ class GERADOR {
 				],
 			 	[ // Terra, brilho
 					{
-						url: "/static/img/F-3200-146.png",
+						url: "static/img/F-3200-146.png",
 						w: 43,
 						h: 43,
 						x: 4,
 						y: 3
 					},
 					{
-						url: "/static/img/F-3200-67.png",
+						url: "static/img/F-3200-67.png",
 						w: 140,
 						h: 140,
 						x: -48,
@@ -76,14 +76,14 @@ class GERADOR {
 				],
 				[ // Lua, brilho
 					{
-						url: "https://lh3.google.com/u/0/d/0B1-7FySnIgnJY1ZnNnlnbnloRUk=w923-h639-iv1",
+						url: "static/img/F-3200-41.png",
 						w: 43,
 						h: 43,
 						x: 4,
 						y: 3
 					},
 					{
-						url: "https://lh3.google.com/u/0/d/0B1-7FySnIgnJM1NmdnNrUGtaN28=w923-h639-iv1",
+						url: "static/img/F-3200-111.png",
 						w: 140,
 						h: 140,
 						x: -48,
@@ -95,28 +95,28 @@ class GERADOR {
 				h_mobi: 1.8,
 				estado: [[ // Polvo
 					{
-						url: "https://lh3.google.com/u/0/d/0B1-7FySnIgnJcndkNm1hZHUtX00=w923-h639-iv1",
+						url: "static/img/F-3167-50.png",
 						w: 57,
 						h: 111,
 						x: -1,
 						y: 33
 					},
 					{
-						url: "https://lh3.google.com/u/0/d/0B1-7FySnIgnJeXdGMTVpTk1ZTTA=w923-h639-iv1",
+						url: "static/img/F-3167-46.png",
 						w: 76,
 						h: 106,
 						x: -2,
 						y: -8
 					},
 					{
-						url: "https://goo.gl/L4y2af",
+						url: "static/img/F-3167~37.png",
 						w: 76,
 						h: 106,
 						x: -2,
 						y: -13
 					},
 					{
-						url: "https://goo.gl/Fx8jYZ",
+						url: "static/img/F-3167~60.png",
 						w: 76,
 						h: 106,
 						x: -5,
@@ -125,28 +125,28 @@ class GERADOR {
 				],
 			 	[ // Águia
 					{
-						url: "https://bit.ly/2uG0YET",
+						url: "static/img/F-3167~51.png",
 						w: 80,
 						h: 86,
 						x: -18,
 						y: 32
 					},
 					{
-						url: "https://goo.gl/VJ3ESV",
+						url: "static/img/F-3167~43.png",
 						w: 76,
 						h: 106,
 						x: 13,
 						y: -18
 					},
 					{
-						url: "https://goo.gl/7rNytS",
+						url: "static/img/F-3167~20.png",
 						w: 76,
 						h: 106,
 						x: 9,
 						y: -21
 					},
 					{
-						url: "https://goo.gl/LqCq4s",
+						url: "static/img/F-3167~53.png",
 						w: 76,
 						h: 106,
 						x: 11,
@@ -155,28 +155,28 @@ class GERADOR {
 				],
 				[ // ??
 					{
-						url: "https://bit.ly/2fsIxlh",
+						url: "static/img/F-3167~55.png",
 						w: 59,
 						h: 101,
 						x: -3,
 						y: 32
 					},
 					{
-						url: "https://goo.gl/FMu4Ji",
+						url: "static/img/F-3167~29.png",
 						w: 76,
 						h: 106,
 						x: -7,
 						y: -16
 					},
 					{
-						url: "https://goo.gl/D5gNBe",
+						url: "static/img/F-3167~31.png",
 						w: 76,
 						h: 106,
 						x: 0,
 						y: -12
 					},
 					{
-						url: "https://goo.gl/jjFmTj",
+						url: "static/img/F-3167~24.png",
 						w: 76,
 						h: 106,
 						x: -6,
@@ -188,28 +188,28 @@ class GERADOR {
 				h_mobi: 1.3,
 				estado: [[ // Pé polvo
 					{
-						url: "https://lh3.google.com/u/0/d/0B1-7FySnIgnJQ3IwbjhDZlNOOVk=w923-h639-iv1",
+						url: "static/img/F-3113-36.png",
 						w: 58,
 						h: 79,
 						x: 0,
 						y: 88
 					},
 					{
-						url: "https://bit.ly/2uFIcxo",
+						url: "static/img/F-3113~14.png",
 						w: 115,
 						h: 121,
 						x: -32,
 						y: -61
 					},
 					{
-						url: "https://bit.ly/2vm0uFU",
+						url: "static/img/F-3113~11.png",
 						w: 115,
 						h: 121,
 						x: -32,
 						y: -61
 					},
 					{
-						url: "https://goo.gl/LwctYo",
+						url: "static/img/F-3113~12.png",
 						w: 115,
 						h: 121,
 						x: -32,
@@ -218,28 +218,28 @@ class GERADOR {
 				],
 			 	[ // Pé águia
 					{
-						url: "https://bit.ly/2fsmFXe",
+						url: "static/img/F-3113~35.png",
 						w: 57,
 						h: 76,
 						x: 2,
 						y: 88
 					},
 					{
-						url: "https://bit.ly/2uFIcxo",
+						url: "static/img/F-3113~14.png",
 						w: 115,
 						h: 121,
 						x: -32,
 						y: -61
 					},
 					{
-						url: "https://bit.ly/2vm0uFU",
+						url: "static/img/F-3113~11.png",
 						w: 115,
 						h: 121,
 						x: -32,
 						y: -61
 					},
 					{
-						url: "https://goo.gl/LwctYo",
+						url: "static/img/F-3113~12.png",
 						w: 115,
 						h: 121,
 						x: -32,
@@ -248,28 +248,28 @@ class GERADOR {
 				],
 				[ // Pé ??
 					{
-						url: "https://lh3.google.com/u/0/d/0B1-7FySnIgnJRUI0elptcHplZHM=w923-h639-iv1",
+						url: "static/img/F-3113-37.png",
 						w: 56,
 						h: 78,
 						x: 3,
 						y: 88
 					},
 					{
-						url: "https://bit.ly/2uFIcxo",
+						url: "static/img/F-3113~14.png",
 						w: 115,
 						h: 121,
 						x: -32,
 						y: -61
 					},
 					{
-						url: "https://bit.ly/2vm0uFU",
+						url: "static/img/F-3113~11.png",
 						w: 115,
 						h: 121,
 						x: -32,
 						y: -61
 					},
 					{
-						url: "https://goo.gl/LwctYo",
+						url: "static/img/F-3113~12.png",
 						w: 115,
 						h: 121,
 						x: -32,
@@ -445,7 +445,7 @@ class GERADOR {
 		}
 		switch (Number(this.fundo)) {
 			case 0:
-				bg_images += "url(https://habboemotion.com/resources/generalscripts/generatorv2/img/piso.png)";
+				bg_images += "url(static/img/piso.png)";
 				break;
 			case 1:
 				bg_images += "linear-gradient(#fff, #fff)";
