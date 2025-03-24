@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Totem's combinations</title>
+    <title>Message Maker</title>
     <link rel="shortcut icon" href="static/img/totem_effects_icon_fire.png" type="image/x-icon">
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <main>
         <div>
-            <h3>Totem's combinations</h3>
+            <h3>Message Maker</h3>
         </div>
         <div>
             <div id="settings">
-                <fieldset id="estilos">
-                    <legend>Parts</legend>
-                    <input type="checkbox" checked /><input type="button" onclick="gerador.changeStyle(-1, 0)" /><span></span><input type="button" onclick="gerador.changeStyle(1, 0)" /><br>
-                    <input type="checkbox" checked /><input type="button" onclick="gerador.changeStyle(-1, 1)" /><span></span><input type="button" onclick="gerador.changeStyle(1, 1)" /><br>
-                    <input type="checkbox" checked /><input type="button" onclick="gerador.changeStyle(-1, 2)" /><span></span><input type="button" onclick="gerador.changeStyle(1, 2)" />
+                <fieldset id="estilo">
+                    <legend>Style</legend>
+                    <input type="radio" name="estilo" value="gift" title="Gift" checked />
+                    <input type="radio" name="estilo" value="sticky_white" title="Default/Colored Post-it" />
+                    <input type="radio" name="estilo" value="sticky_dream" title="Dream Post-it" />
+                    <input type="radio" name="estilo" value="sticky_heart" title="Heart Post-it" />
+                    <input type="radio" name="estilo" value="sticky_lovin" title="Lovin Post-it" />
+                    <input type="radio" name="estilo" value="sticky_shakespeare" title="Shakespeare Post-it" />
+                    <input type="radio" name="estilo" value="sticky_xmas" title="Xmas Post-it" />
+                    <input type="radio" name="estilo" value="trophy_gold" title="Gold Trophy" />
+                    <input type="radio" name="estilo" value="trophy_silver" title="Silver Trophy" />
+                    <input type="radio" name="estilo" value="trophy_bronze" title="Bronze Trophy" />
                 </fieldset>
-                <fieldset id="luz">
-                    <legend>Light</legend>
-                    
-                    <input type="radio" name="color" />
-                    <input type="radio" name="color" /><br>
-                    <input type="radio" name="color" />
-                    <input type="radio" name="color" checked />
+                <fieldset id="mensagem">
+                    <legend>Message</legend>
+                    <textarea placeholder="Type your message here..."></textarea>
                 </fieldset>
-                <fieldset id="fundo">
-                    <legend>Background</legend>
+                <fieldset id="ferramentas">
+                    <legend>Tools</legend>
                     
                     <input type="radio" name="fundo" checked />
                     <input type="radio" name="fundo" />
@@ -37,13 +40,6 @@
                     <input type="radio" name="fundo" />
                     <input type="radio" name="fundo" />
                     <input type="radio" name="fundo" />
-                </fieldset>
-                <fieldset id="especiais">
-                    <legend>Combos</legend>
-                    <input type="radio" name="espe" />
-                    <input type="radio" name="espe" />
-                    <input type="radio" name="espe" />
-                    <input type="radio" name="espe" />
                 </fieldset>
             </div>
             <div id="preview">
@@ -53,8 +49,8 @@
     </main>
 
     <footer>
-        <p>2017-2024 ~ Made with ❤. This website <strong>is not</strong> owned or operated by Sulake Oy® and is not affiliated with or part of Habbo Hotel®.</p>
-        <p>Source code available <a href="https://github.com/Habbianos/totem-combinations" target="_blank">here</a> (and images <a href="https://github.com/Habbianos/totem-combinations/tree/main/static/img/README.md" target="_blank">here</a> with transparency).</p>
+        <p>2025-2025 ~ Made with ❤. This website <strong>is not</strong> owned or operated by Sulake Oy® and is not affiliated with or part of Habbo Hotel®.</p>
+        <p>Source code available <a href="https://github.com/Habbianos/message-maker" target="_blank">here</a>.</p>
     </footer>
 
     <script src="static/script.js"></script>

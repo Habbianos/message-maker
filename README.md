@@ -1,2 +1,2 @@
-# totem-combinations
-Little editor to render every Totem combination
+# message-maker
+Little editor to create messages (trophy, gifts, post-its)

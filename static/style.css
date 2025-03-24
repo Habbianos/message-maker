@@ -1,3 +1,12 @@
+@font-face {
+	font-family: Habbo Ubuntu; 
+	src: url('/static/font/Ubuntu.ttf');
+}
+@font-face {
+	font-family: Habbo Volter; 
+	src: url('/static/font/Volter.ttf');
+}
+
 * {
 	box-sizing: border-box;
 	outline: none;
@@ -10,7 +19,7 @@
 		color .3s;
 }
 body {
-	font-family: Ubuntu, sans-serif;
+	font-family: Habbo Ubuntu, sans-serif;
 	text-align: center;
 	/* background-color: #eee;
 	
@@ -19,7 +28,7 @@ body {
 		linear-gradient(45deg, #bbb 7px, transparent 7px, transparent 21px, #bbb 21px);
 	background-size: 20px 20px;
 	background-position: 0 0, 10px 10px; */
-	background-image: url(img/bg_ltribe_jungle_2.png), url(img/bg_ltribe_jungle_2_sky.png);
+	/* background-image: url(img/bg_ltribe_jungle_2.png), url(img/bg_ltribe_jungle_2_sky.png); */
 	background-size: auto;
 	background-position: center 0;
 	background-repeat: no-repeat, repeat-x;
@@ -29,11 +38,19 @@ body {
     margin: 0;
 }
 
+textarea {
+	font-family: var(--font, Habbo Volter);
+	font-size: 9px;
+	resize: none;
+	width: 275px;
+    height: 115px;
+}
+
 main {
 	width: 738px;
     padding: 5px;
     margin: 5px auto;
-    background-color: #004b2b;
+    background-color: rgb(246, 246, 49);
     border: 1px solid rgba(0,0,0,.5);
     border-radius: 5px;
     overflow: hidden;
@@ -42,7 +59,7 @@ main {
 main > div {
 	padding: 5px;
     margin-bottom: 5px;
-    background-color: #28a661;
+    background-color: rgb(228, 228, 45);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -85,9 +102,8 @@ div#settings {
 	float: left;
 	width: 316px;
 	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
 	justify-content: center;
+	flex-direction: column;
 }
 input {
 	width: 16px;
@@ -127,7 +143,7 @@ input {
 #estilos input:nth-of-type(3n+2) {
 	background-image: url(img/f_izq.gif);
 }
-#luz input, #fundo input, #especiais input {
+#luz input, #ferramentas input, #estilo input {
 	-webkit-appearance: none;
 	cursor: pointer;
 	background-origin: content-box;
@@ -137,14 +153,14 @@ input {
 	border: 1px solid #ccc;
 	border-radius: 2px;
 }
-#luz input:hover, #fundo input:hover {
+#luz input:hover, #ferramentas input:hover {
 	border-color: #39b;
 }
-#luz input:checked, #fundo input:checked, #especiais input:checked {
+#luz input:checked, #ferramentas input:checked, #estilo input:checked {
 	border: 2px solid #39b !important;
 	padding: 0 !important;
 }
-#luz input:nth-of-type(1), #fundo input:nth-of-type(1) {
+#luz input:nth-of-type(1), #ferramentas input:nth-of-type(1) {
 	background-image: url(img/info_icons.png);
 	background-size: 8px;
 	background-position: center -347px;
@@ -158,53 +174,93 @@ input {
 #luz input:nth-of-type(4) {
 	background-image: linear-gradient(#19bcfb, #19bcfb);
 }
-#fundo input:nth-of-type(2) {
+#ferramentas input:nth-of-type(2) {
 	background-image: linear-gradient(#fff, #fff);
 }
-#fundo input:nth-of-type(3) {
+#ferramentas input:nth-of-type(3) {
 	background-image: linear-gradient(#f00, #f00);
 }
-#fundo input:nth-of-type(4) {
+#ferramentas input:nth-of-type(4) {
 	background-image: linear-gradient(#0f0, #0f0);
 }
-#fundo input:nth-of-type(5) {
+#ferramentas input:nth-of-type(5) {
 	background-image: linear-gradient(#00f, #00f);
 }
-#fundo input:nth-of-type(6) {
+#ferramentas input:nth-of-type(6) {
 	background-image: linear-gradient(#000, #000);
 }
-#especiais input {
+#estilo input {
 	width: 40px;
 	height: 40px;
 	background-color: #eeeeee;
 	background-size: inherit;
-	background-position: center;
+	background-position: 0 0;
+	background-image: var(--image);
 }
-#especiais input:hover {
+#estilo input:hover {
 	background-color: #ddd;
 	border-color: #bbb;
 }
-#especiais input:active {
+#estilo input:active {
 	background-color: #ccc;
 	border-color: #aaa;
 }
-#especiais input:nth-of-type(1) {
-	background-image: url(img/totem_effects_icon_fire.png);
+#estilo input[value=gift],
+:has(input[value=gift]:checked) {
+	--image: url(/static/img/gift.png);
+	--font: Habbo Ubuntu;
 }
-#especiais input:nth-of-type(2) {
-	background-image: url(img/totem_effects_icon_earth.png);
+#estilo input[value=sticky_dream],
+:has(input[value=sticky_dream]:checked) {
+	--image: url(/static/img/sticky_dream.png);
+	--font: Habbo Volter;
 }
-#especiais input:nth-of-type(3) {
-	background-image: url(img/totem_effects_icon_aqua.png);
+#estilo input[value=sticky_heart],
+:has(input[value=sticky_heart]:checked) {
+	--image: url(/static/img/sticky_heart.png);
+	--font: Habbo Volter;
 }
-#especiais input:nth-of-type(4) {
-	background-image: url(img/totem_effects_icon_staff.png);
+#estilo input[value=sticky_lovin],
+:has(input[value=sticky_lovin]:checked) {
+	--image: url(/static/img/sticky_lovin.png);
+	--font: Habbo Volter;
+}
+#estilo input[value=sticky_shakespeare],
+:has(input[value=sticky_shakespeare]:checked) {
+	--image: url(/static/img/sticky_shakespeare.png);
+	--font: Habbo Volter;
+}
+#estilo input[value=sticky_white],
+:has(input[value=sticky_white]:checked) {
+	--image: url(/static/img/sticky_white.png);
+	--font: Habbo Volter;
+}
+#estilo input[value=sticky_xmas],
+:has(input[value=sticky_xmas]:checked) {
+	--image: url(/static/img/sticky_xmas.png);
+	--font: Habbo Volter;
+}
+#estilo input[value=trophy_bronze],
+:has(input[value=trophy_bronze]:checked) {
+	--image: url(/static/img/trophy_bronze.png);
+	--font: Habbo Ubuntu;
+}
+#estilo input[value=trophy_gold],
+:has(input[value=trophy_gold]:checked) {
+	--image: url(/static/img/trophy_gold.png);
+	--font: Habbo Ubuntu;
+}
+#estilo input[value=trophy_silver],
+:has(input[value=trophy_silver]:checked) {
+	--image: url(/static/img/trophy_silver.png);
+	--font: Habbo Ubuntu;
 }
 div#preview {
 	float: right;
 	width: 395px;
-	background-image: url(img/piso.png);
+	background-image: var(--image, linear-gradient(transparent, transparent)), url(/static/img/piso.png);
 	background-position: center;
+	background-repeat: no-repeat, repeat;
 }
 #preview img {
 	position: absolute;
