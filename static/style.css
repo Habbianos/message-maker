@@ -1,10 +1,10 @@
 @font-face {
 	font-family: Habbo Ubuntu; 
-	src: url('/static/font/Ubuntu.ttf');
+	src: url('./font/Ubuntu.ttf');
 }
 @font-face {
 	font-family: Habbo Volter; 
-	src: url('/static/font/Volter.ttf');
+	src: url('./font/Volter.ttf');
 }
 
 * {
@@ -207,58 +207,58 @@ input {
 }
 #estilo input[value=gift],
 :has(input[value=gift]:checked) {
-	--image: url(/static/img/gift.png);
+	--image: url(./img/gift.png);
 	--font: Habbo Ubuntu;
 }
 #estilo input[value=sticky_dream],
 :has(input[value=sticky_dream]:checked) {
-	--image: url(/static/img/sticky_dream.png);
+	--image: url(./img/sticky_dream.png);
 	--font: Habbo Volter;
 }
 #estilo input[value=sticky_heart],
 :has(input[value=sticky_heart]:checked) {
-	--image: url(/static/img/sticky_heart.png);
+	--image: url(./img/sticky_heart.png);
 	--font: Habbo Volter;
 }
 #estilo input[value=sticky_lovin],
 :has(input[value=sticky_lovin]:checked) {
-	--image: url(/static/img/sticky_lovin.png);
+	--image: url(./img/sticky_lovin.png);
 	--font: Habbo Volter;
 }
 #estilo input[value=sticky_shakespeare],
 :has(input[value=sticky_shakespeare]:checked) {
-	--image: url(/static/img/sticky_shakespeare.png);
+	--image: url(./img/sticky_shakespeare.png);
 	--font: Habbo Volter;
 }
 #estilo input[value=sticky_white],
 :has(input[value=sticky_white]:checked) {
-	--image: url(/static/img/sticky_white.png);
+	--image: url(./img/sticky_white.png);
 	--font: Habbo Volter;
 }
 #estilo input[value=sticky_xmas],
 :has(input[value=sticky_xmas]:checked) {
-	--image: url(/static/img/sticky_xmas.png);
+	--image: url(./img/sticky_xmas.png);
 	--font: Habbo Volter;
 }
 #estilo input[value=trophy_bronze],
 :has(input[value=trophy_bronze]:checked) {
-	--image: url(/static/img/trophy_bronze.png);
+	--image: url(./img/trophy_bronze.png);
 	--font: Habbo Ubuntu;
 }
 #estilo input[value=trophy_gold],
 :has(input[value=trophy_gold]:checked) {
-	--image: url(/static/img/trophy_gold.png);
+	--image: url(./img/trophy_gold.png);
 	--font: Habbo Ubuntu;
 }
 #estilo input[value=trophy_silver],
 :has(input[value=trophy_silver]:checked) {
-	--image: url(/static/img/trophy_silver.png);
+	--image: url(./img/trophy_silver.png);
 	--font: Habbo Ubuntu;
 }
 div#preview {
 	float: right;
 	width: 395px;
-	background-image: var(--image, linear-gradient(transparent, transparent)), url(/static/img/piso.png);
+	background-image: var(--image, linear-gradient(transparent, transparent)), url(./img/piso.png);
 	background-position: center;
 	background-repeat: no-repeat, repeat;
 }
