@@ -25,11 +25,11 @@ body {
 		linear-gradient(45deg, #bbb 7px, transparent 7px, transparent 21px, #bbb 21px);
 	background-size: 20px 20px;
 	background-position: 0 0, 10px 10px; */
-	/* background-image: url(img/bg_ltribe_jungle_2.png), url(img/bg_ltribe_jungle_2_sky.png); */
+	background-image: url(img/habbokurzgeschichten_v2.png), url(img/bg_ltribe_jungle_2_sky.png);
 	background-size: auto;
 	background-position: center 0;
 	background-repeat: no-repeat, repeat-x;
-	background-color: #000;
+	background-color: #95d5ec;
 	padding-top: 230px;
 	min-height: 1360px;
 	margin: 0;
