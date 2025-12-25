@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <main>
-        <div>
+    <section>
+        <header>
             <h3>Message Maker</h3>
-        </div>
-        <div>
+        </header>
+        <main>
             <div id="settings">
                 <fieldset id="estilo">
                     <legend>Style</legend>
-                    <input type="radio" name="estilo" value="gift" title="Gift" checked />
-                    <input type="radio" name="estilo" value="sticky_white" title="Default/Colored Post-it" />
+                    <input type="radio" name="estilo" value="gift" title="Gift" />
+                    <input type="radio" name="estilo" value="sticky_white" title="Default/Colored Post-it" checked />
                     <input type="radio" name="estilo" value="sticky_dream" title="Dream Post-it" />
                     <input type="radio" name="estilo" value="sticky_heart" title="Heart Post-it" />
                     <input type="radio" name="estilo" value="sticky_lovin" title="Lovin Post-it" />
@@ -29,24 +29,31 @@
                 </fieldset>
                 <fieldset id="mensagem">
                     <legend>Message</legend>
-                    <textarea placeholder="Type your message here..."></textarea>
+                    <textarea name="message" class="dynamic" placeholder="Type your message here...">bobbaabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZbobbaabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZbobbaabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZbobbaabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZbobbaabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZbobbaabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZbobbaabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZbobbaabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
+                    <div id="counters">
+                        <div>
+                            <strong>Characters:</strong> <span id="charCount">0/150</span>
+                        </div>
+                        <div>
+                            <strong>Lines:</strong> <span id="lineCount">0/6</span>
+                        </div>
+                    </div>
                 </fieldset>
                 <fieldset id="ferramentas">
                     <legend>Tools</legend>
                     
-                    <input type="radio" name="fundo" checked />
-                    <input type="radio" name="fundo" />
-                    <input type="radio" name="fundo" />
-                    <input type="radio" name="fundo" />
-                    <input type="radio" name="fundo" />
-                    <input type="radio" name="fundo" />
+                    <input type="button" value="Split line" />
+                    <input type="button" value="Align line Center" />
+                    <input type="button" value="Align line Right" />
+                    <input type="button" value="Align text Middle" />
+                    <input type="button" value="Collumnify" />
                 </fieldset>
             </div>
-            <div id="preview">
+            <div id="preview" class="dynamic">
                 
             </div>
-        </div>
-    </main>
+        </main>
+    </section>
 
     <footer>
         <p>2025-2025 ~ Made with ❤. This website <strong>is not</strong> owned or operated by Sulake Oy® and is not affiliated with or part of Habbo Hotel®.</p>
