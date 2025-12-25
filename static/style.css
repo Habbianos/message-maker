@@ -42,6 +42,11 @@ textarea {
 	width: 275px;
 	height: 115px;
 }
+textarea:focus-within {
+	outline: 2px solid #39b;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
 
 #counters {
 	margin: 0 8px;
@@ -282,6 +287,14 @@ div#preview {
 	background-repeat: no-repeat, repeat;
 	text-align: left;
 	font-family: var(--font);
+}
+div#preview:after {
+    content: "This is a fan-made tool designed to facilitate the task of planning the message you submit before purchasing an item (gift or trophy) by mimicking the text box's final appearance. Although the goal is to replicate the behavior as closely as possible, if any discrepancies are found, we are not responsible for the \"loss\" of a purchased item (for example, if the message does not appear as displayed on the website).";
+    font-size: 8px;
+    line-height: 7px;
+    text-align: center;
+    display: block;
+    margin: 100% 35px 0;
 }
 #preview > div {
 	position: absolute;
