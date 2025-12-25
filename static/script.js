@@ -9,7 +9,7 @@ const alignRightBtn = document.querySelector('input[value="Align line Right"]');
 const alignMiddleBtn = document.querySelector('input[value="Align text Middle"]');
 const columnifyBtn = document.querySelector('input[value="Collumnify"]');
 
-let currentStyle = 'sticky_white';
+let currentStyle = 'gift';
 let previewElement = null;
 
 // Style configurations with positioning and dimensions
@@ -34,8 +34,6 @@ function createPreviewElement() {
     
     const config = styleConfigs[currentStyle];
     previewElement = document.createElement('div');
-    // previewElement.style.left = config.left + 'px';
-	// previewElement.style.top = config.top + 'px';
 	previewElement.style.transform = `translate(calc(-50% + ${config.left}px), calc(-50% + ${config.top}px))`;
     previewElement.style.width = config.width + 'px';
     previewElement.style.height = config.height + 'px';
